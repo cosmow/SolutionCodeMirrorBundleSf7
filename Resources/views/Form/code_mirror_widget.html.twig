@@ -1,7 +1,7 @@
 {% form_theme form _self %}
 
 {% block code_mirror_widget %}
-    {% spaceless %}
+    {% appy spaceless %}
         <textarea id="{{ id }}" name="{{ name }}">{{ data }}</textarea>
         {% if code_mirror_is_first_call() %}
             {% javascripts '@SolutionCodeMirrorBundle/Resources/public/js/codemirror.js'  %}
@@ -24,5 +24,5 @@
         <script>
             var code_mirror_{{ id }} = CodeMirror.fromTextArea(document.getElementById("{{ id }}"), {{ code_mirror_parameters_render(parameters)|raw }});
         </script>
-    {% endspaceless %}
+    {% endapply %}
 {% endblock %}
