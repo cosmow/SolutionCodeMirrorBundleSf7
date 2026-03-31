@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "symfony/framework-bundle": "^5.0 || ^6.0",
+        "php": "^8.2",
+        "symfony/framework-bundle": "^6.4 || ^7.0",
         "twig/twig": "^3.8.0",
         "laminas/laminas-json": "^3.6"
     },
